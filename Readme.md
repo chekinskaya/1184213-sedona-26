@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Яна](https://up.htmlacademy.ru/htmlcss/26/user/1184213).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Ильченко](https://up.htmlacademy.ru/htmlcss/26/user/375383).
 
 ---
 
