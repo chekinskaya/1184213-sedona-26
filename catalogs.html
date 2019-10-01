@@ -17,23 +17,54 @@
 			</nav>
 		</header>
 		<main>
-			<h1>Поиск отелей</h1>
+			
 			<section>
-				<h3>Инфраструктура:</h3>
-				<ul>
-					<li>Бассейн</li>
-					<li>Парковка</li>
-					<li>WI-FI</li>
-				</ul>
-				<h3>Тип жилья:</h3>
-				<ul>
-					<li>Гостиница</li>
-					<li>Мотель</li>
-					<li>Апартаменты</li>
-				</ul>
-				<h3>Стоимость в сутки:</h3>
-				<!--Здесь что-то будет)-->
-				<button type="submit">Показать</button>
+				<form action="https://echo.htmlacademy.ru" method="post">
+					<fieldset>
+						<legend><h1 class="visually-hidden">Поиск отелей</h1></legend>
+						<fieldset>
+							<legend>Инфраструктура:</legend>
+							<p>
+								<input type="checkbox" name="pool" id="pool" checked>
+								<label for="pool">Бассейн</label>
+							</p>
+							<p>
+								<input type="checkbox" name="parking" id="parking">
+								<label for="parking">Парковка</label>
+							</p>
+							<p>
+								<input type="checkbox" name="wifi" id="wifi">
+								<label for="wifi">WI-FI</label>
+							</p>
+						</fieldset>
+						
+						<fieldset>
+							<legend>Тип жилья:</legend>
+							<p>
+								<input type="checkbox" name="hotel" id="hotel" checked>
+								<label for="hotel">Гостиница</label>
+							</p>
+							<p>
+								<input type="checkbox" name="motel" id="motel" checked>
+								<label for="motel">Мотель</label>
+							</p>
+							<p>
+								<input type="checkbox" name="apartments" id="apartments" checked>
+								<label for="apartments">Апартаменты</label>
+							</p>
+						</fieldset>
+						<fieldset>
+							<legend>Стоимость в сутки (Р):</legend>
+							<p>
+								<input type="text" name="count" id="count-result-1" value="0">
+								<input type="text" name="count" id="count-result-2" value="3000">
+							</p>
+							0<input type="range" name="count" id="count" min="0" max="5000">5000
+						</fieldset>
+						<button type="submit">Показать</button>
+					</fieldset>
+					
+				</form>
 			</section>
 			<section>
 				<h3>Сортировка</h3>
@@ -46,9 +77,7 @@
 			<section>
 				<ul>
 					<li>
-						<h2>
-						<a href="#">Amara Resort&SPA</a>
-						</h2>
+						<h2>Amara Resort&SPA</h2>
 						<img src="img/AmaraResort&SPA-min.jpg" width="135" height="90" alt="Фото отеля Amara&Resort SPA">
 						<span>Гостиница</span>
 						<strong>от 4000 р</strong>
@@ -58,9 +87,7 @@
 						<a href="">Забронировать</a>
 					</li>
 					<li>
-						<h2>
-						<a href="#">Desert Quail Inn</a>
-						</h2>
+						<h2>Desert Quail Inn</h2>
 						<img src="img/DesertQuailInn-min.jpg" width="135" height="90" alt="Фото мотеля Desert Quail Inn">
 						<span>Мотель</span>
 						<strong>от 3000 р</strong>
@@ -70,9 +97,7 @@
 						<a href="">Забронировать</a>
 					</li>
 					<li>
-						<h2>
-						<a href="#">Villas at Poco Diablo</a>
-						</h2>
+						<h2>Villas at Poco Diablo</h2>
 						<img src="img/VillasAtPocoDiablo-min.jpg" width="135" height="90" alt="Фото апартаментов Villas At Poco Diablo">
 						<span>Апартаменты</span>
 						<strong>от 2000 р</strong>
