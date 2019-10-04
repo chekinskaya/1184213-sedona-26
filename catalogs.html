@@ -19,21 +19,21 @@
 		<main>
 			
 			<section>
-				<form action="https://echo.htmlacademy.ru" method="post">
+				<form action="https://echo.htmlacademy.ru" method="post" oninput="results.value=search.value">
 					<fieldset>
 						<legend><h1 class="visually-hidden">Поиск отелей</h1></legend>
 						<fieldset>
 							<legend>Инфраструктура:</legend>
 							<p>
-								<input type="checkbox" name="pool" id="pool" checked>
+								<input type="checkbox" name="infrastructure" id="pool" checked>
 								<label for="pool">Бассейн</label>
 							</p>
 							<p>
-								<input type="checkbox" name="parking" id="parking">
+								<input type="checkbox" name="infrastructure" id="parking">
 								<label for="parking">Парковка</label>
 							</p>
 							<p>
-								<input type="checkbox" name="wifi" id="wifi">
+								<input type="checkbox" name="infrastructure" id="wifi">
 								<label for="wifi">WI-FI</label>
 							</p>
 						</fieldset>
@@ -41,15 +41,15 @@
 						<fieldset>
 							<legend>Тип жилья:</legend>
 							<p>
-								<input type="checkbox" name="hotel" id="hotel" checked>
+								<input type="checkbox" name="type-hotel" id="hotel" checked>
 								<label for="hotel">Гостиница</label>
 							</p>
 							<p>
-								<input type="checkbox" name="motel" id="motel" checked>
+								<input type="checkbox" name="type-hotel" id="motel" checked>
 								<label for="motel">Мотель</label>
 							</p>
 							<p>
-								<input type="checkbox" name="apartments" id="apartments" checked>
+								<input type="checkbox" name="type-hotel" id="apartments" checked>
 								<label for="apartments">Апартаменты</label>
 							</p>
 						</fieldset>
@@ -63,16 +63,18 @@
 						</fieldset>
 						<button type="submit">Показать</button>
 					</fieldset>
-					
+					<label for="results">Найдено:</label>
+					<output name="results" id="results">3</output>
 				</form>
-			</section>
-			<section>
+				
 				<h3>Сортировка</h3>
 				<ul>
-					<li>По цене</li>
-					<li>По типу</li>
-					<li>По рейтингу</li>
+					<li><a href="#">По цене</a></li>
+					<li><a href="#">По типу</a></li>
+					<li><a href="#">По рейтингу</a></li>
 				</ul>
+				<a href="#"><img src="img/icon-up-dir.svg" width="11" height="10"></a>
+				<a href="#"><img src="img/icon-down-dir.svg" width="11" height="10"></a>
 			</section>
 			<section>
 				<ul>
