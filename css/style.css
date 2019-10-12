@@ -29,14 +29,18 @@ a {
   text-decoration: none;
 }
 
-/*
-.welcome .rectangle {
-    width: 1200px;
-    height: 216px;
-    background: #ffffff;
-    position: absolute;
+.site-navigation {
+  list-style: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
 }
-*/
+
+.site-navigation a {
+  color: #000000;
+}
 
 .welcome {
 	width: 1200px;
@@ -54,6 +58,15 @@ a {
 
 }
 
+/*
+.welcome .rectangle {
+    width: 1200px;
+    height: 216px;
+    background-color: #ffffff;
+    padding-top: 564px;
+}
+*/
+
 .visually-hidden{
 	display: none;
 }
@@ -63,6 +76,7 @@ a {
 	font-size: 21px;
 	line-height: 26px;
 
+	padding-top: 625px;
 }
 
 .welcome-text{
@@ -73,23 +87,13 @@ a {
 }
 
 
-
-.site-navigation {
-  list-style: none;
-  font-size: 14px;
-  line-height: 26px;
-  color: #000000;
-
-  background-color: #ffffff;
-}
-
-.site-navigation a {
-  color: #000000;
-}
-
 .reason-first{
   height: 256px;
   width: 400px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 60px;
 
   background-color: #81b3d2;
 
@@ -102,10 +106,19 @@ a {
 
 }
 
+.reason-first-img{
+	height: 256px;
+	width: 800px;
+}
+
 
 .reason-second{
   height: 256px;
   width: 400px;
+  padding-top: 46px;
+  padding-bottom: 64px;
+  padding-left: 60px;
+  padding-right: 60px;
   
   background-color: #81b3d2;
 
@@ -119,11 +132,16 @@ a {
 }
 
 .reasons-list {
+	width: 1200px;
+	height: 330px;
+
 	list-style: none;
 	text-align: center;
+	display: flex;
+	background-color: #ffffff;
 }
 
-.reason-item p{
+.reason-item {
   font-weight: 300;
   font-size: 14px;
   line-height: 21px;
@@ -135,26 +153,45 @@ a {
   
 }
 
-.reason-order{
-  color: #000000;
-  text-align: center;
+.reason-item::before{
+
 }
 
-.reason-order-item{
+.reasons-list2{
+  color: #000000;
+  text-align: center;
+
+  height: 256px;
+  width: 1200px;
+
+  display: flex;
+  position: relative;
+  list-style: none;
+
+
+}
+
+
+.reason-list2-item{
   height: 256px;
   width: 400px;
+  padding-top: 50px;
 
   background-color: #eeeeee;
 
 }
 
-.reason-order-text{
+.reason-list2-text {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 21px;
 }
 
-
+.info-footer{
+  width: 1200px;
+  height: 120px;
+  opacity: 0.9;
+}
 
 
 
