@@ -153,7 +153,33 @@ a {
   
 }
 
-.reason-item::before{
+.reason-hostel::before{
+	content: " ";
+	width: 75px;
+	height: 72px;
+
+	background-image: url("../img/icon-1.svg");
+	background-repeat: no-repeat;
+
+}
+
+.reason-food::before{
+	content: " ";
+	width: 74px;
+	height: 70px;
+
+	background-image: url("../img/icon-2.svg");
+	background-repeat: no-repeat;
+
+}
+
+.reason-souvenir::before{
+	content: " ";
+	width: 64px;
+	height: 76px;
+
+	background-image: url("../img/icon-3.svg");
+	background-repeat: no-repeat;
 
 }
 
