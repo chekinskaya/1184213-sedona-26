@@ -50,6 +50,9 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.current-page a{
+	color: #766357;
+}
 
 .welcome {
 	width: 1200px;
