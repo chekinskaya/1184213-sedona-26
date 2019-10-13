@@ -42,6 +42,15 @@ a {
 	color: #000000;
 }
 
+.site-page:hover a {
+	color: #81b3d2;
+}
+
+.site-page:active a {
+	color: rgba(0, 0, 0, 0.3);
+}
+
+
 .welcome {
 	width: 1200px;
 	height: 565px;
@@ -110,8 +119,8 @@ a {
 .reasons-list {
 	width: 1200px;
 	height: 330px;
-	margin: 0;
-	padding: 0;
+	margin: 0px;
+	padding: 0px;
 
 	list-style: none;
 	text-align: center;
@@ -125,6 +134,8 @@ a {
 	line-height: 21px;
 	padding-top: 100px;
 	position: relative;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .reason-item h3 {
@@ -206,6 +217,28 @@ a {
 	font-weight: 300;
 }
 
+.sorting{
+	font-weight: 300;
+}
+
+.sorting-type-item a{
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dashed #81b3d2;
+	font-size: 12px;
+	line-height: 18px;
+
+}
+
+.sorting-type-item:hover a{
+	color: #81b3d2;
+	border-bottom: 1px dashed #81b3d2;
+}
+
+.sorting-type-item:active a{
+	color: #000000;
+	border-bottom: 0px dashed #81b3d2;
+}
+
 .btn {
 	padding: 5px;
 	border: none;
@@ -215,6 +248,24 @@ a {
 	font-size: 14px;
 	line-height: 21px;
 	color: #ffffff;
+}
+
+.btn:hover{
+	background-color: #604e43;
+}
+
+.btn:active{
+	background-color: #503e33;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-info:hover{
+	background-color: #669ec0;
+}
+
+.btn-info:active{
+	background-color: #5496bd;
+	color: rgba(255, 255, 255, 0.3);
 }
 
 .btn-search{
@@ -271,10 +322,25 @@ a {
 	margin: 0;
 }
 
+.result-title:hover a{
+	color: #81b3d2;
+}
+
+.result-title:active a{
+	color: rgba(0, 0, 0, 0.3); 
+}
+
 .result-text{
 	font-weight: 300;
 }
 
+.rate{
+	background-color: #f2f2f2;
+	font-weight: 300;
+	color: #666666;
+	font-size: 14px;
+	line-height: 21px;
+}
 .info-footer{
  /* width: 1200px;
   height: 120px;*/
@@ -290,9 +356,11 @@ a {
 }
 
 .social{
+	display: flex;
+}
+.social li{
 	list-style: none;
 	text-align: center;
-	display: flex;
 	padding: 0;
 }
 
@@ -305,7 +373,7 @@ a {
 	padding: 0;
 }
 
-.social-contact{
+.social-contact a{
 	font-size: 0px;
 }
 
@@ -352,10 +420,30 @@ a {
 	background-repeat: no-repeat;
 }
 
+.social-contact:hover{
+	background-color: #669ec0;
+}
+
+.social-contact:active{
+	background-color: #5496bd;
+}
+
+.social-contact:active::before{
+	opacity: 0.3;
+}
+
 .htmlacademy{
 	color: #000000;
 }
 
 .htmlacademy-img{
 	fill: black;
+}
+
+.htmlacademy-img:hover{
+	fill: #81b3d2;
+}
+
+.htmlacademy-img:active{
+	fill: #bdbbbc;
 }
