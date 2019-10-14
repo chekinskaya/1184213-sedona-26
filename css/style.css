@@ -221,28 +221,6 @@ a {
 	font-weight: 300;
 }
 
-.sorting{
-	font-weight: 300;
-}
-
-.sorting-type-item a{
-	color: rgba(0, 0, 0, 0.3);
-	border-bottom: 1px dashed #81b3d2;
-	font-size: 12px;
-	line-height: 18px;
-
-}
-
-.sorting-type-item:hover a{
-	color: #81b3d2;
-	border-bottom: 1px dashed #81b3d2;
-}
-
-.sorting-type-item:active a{
-	color: #000000;
-	border-bottom: 0px dashed #81b3d2;
-}
-
 .btn {
 	padding: 5px;
 	border: none;
@@ -293,15 +271,48 @@ a {
 	background-color: #766357;
 }
 
+.sorting{
+	font-weight: 300;
+}
+
 .sorting-type{
 	list-style: none;
 }
 
 .sorting-type-item a{
-	color: #81b3d2;
-	font-weight: 300;
+	color: rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dashed #81b3d2;
 	font-size: 12px;
-	line-height: 1.5;
+	line-height: 18px;
+	font-weight: 300;
+}
+
+.sorting-type-item:hover a{
+	color: #81b3d2;
+	
+}
+
+.sorting-type-item:active a{
+	color: #000000;
+	border-bottom: 0px dashed rgba(0, 0, 0, 0);
+}
+
+.find{
+	color: #000000;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.dir{
+	fill: #cacaca;
+}
+
+.dir:hover{
+	fill: #000000;
+}
+
+.dir:active{
+	fill: #81b3d2;
 }
 
 .results-list{
@@ -368,17 +379,15 @@ a {
 	padding: 0;
 }
 
-.social-contact{
-	background-color: #81b3d2;
+.social-contact a{
+	display: block;
 	width: 46px;
 	height: 48px;
 	margin: 3px;
 	position: relative;
 	padding: 0;
-}
-
-.social-contact a{
 	font-size: 0px;
+	background-color: #81b3d2;
 }
 
 .twit::before{
@@ -424,15 +433,15 @@ a {
 	background-repeat: no-repeat;
 }
 
-.social-contact:hover{
+.social-contact:hover a{
 	background-color: #669ec0;
 }
 
-.social-contact:active{
+.social-contact:active a{
 	background-color: #5496bd;
 }
 
-.social-contact:active::before{
+.social-contact:active::before a{
 	opacity: 0.3;
 }
 
