@@ -221,6 +221,31 @@ a {
 	font-weight: 300;
 }
 
+.selection{
+	background-image: url("../img/filter-background-min.jpg");
+	background-color: #766357;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	text-transform: uppercase;
+	font-weight: 300;
+	color: #ffffff;
+}
+
+.selection legend{
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.selection fieldset{
+	border: 0 none;
+}
+
+.find-sort{
+	background-color: #ffffff;
+}
+
 .btn {
 	padding: 5px;
 	border: none;
@@ -269,6 +294,21 @@ a {
 
 .btn-reservation{
 	background-color: #766357;
+}
+
+.btn-show{
+	border: solid 2px #ffffff;
+	border-radius: 2px;
+	background-color: transparent;
+
+	font-size: 14px;
+	line-height: 21px;
+	font-family:  "PT Sans", Arial, sans-serif;
+	text-transform: uppercase;
+}
+.btn-show:hover,
+.btn-show:active{
+	background-color: transparent;
 }
 
 .sorting{
@@ -356,6 +396,7 @@ a {
 	font-size: 14px;
 	line-height: 21px;
 }
+
 .info-footer{
  /* width: 1200px;
   height: 120px;*/

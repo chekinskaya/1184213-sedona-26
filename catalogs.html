@@ -23,62 +23,64 @@
 		</header>
 		<main>
 			
-			<section>
+			<section class="selection">
 				<form action="https://echo.htmlacademy.ru" method="post" oninput="results.value=search.value">
-					<fieldset>
+					<fieldset class="selection-field">
 						<legend><h1 class="visually-hidden">Поиск отелей</h1></legend>
-						<fieldset>
-							<legend>Инфраструктура:</legend>
-							<p>
-								<input type="checkbox" name="infrastructure" value="pool" id="pool" checked>
+						<fieldset class="selection-infrastructure">
+							<legend class="selection-title">Инфраструктура:</legend>
+							<p class="selection-type">
+								<input class="checkbox" type="checkbox" name="infrastructure" value="pool" id="pool" checked>
 								<label for="pool">Бассейн</label>
 							</p>
-							<p>
-								<input type="checkbox" name="infrastructure" value="parking" id="parking">
+							<p class="selection-type">
+								<input class="checkbox" type="checkbox" name="infrastructure" value="parking" id="parking">
 								<label for="parking">Парковка</label>
 							</p>
-							<p>
-								<input type="checkbox" name="infrastructure" value="wifi" id="wifi">
+							<p class="selection-type">
+								<input class="checkbox" type="checkbox" name="infrastructure" value="wifi" id="wifi">
 								<label for="wifi">WI-FI</label>
 							</p>
 						</fieldset>
 						
-						<fieldset>
-							<legend>Тип жилья:</legend>
-							<p>
-								<input type="checkbox" name="type-hotel" value="hotel" id="hotel" checked>
+						<fieldset class="selection-hostel">
+							<legend class="selection-title">Тип жилья:</legend>
+							<p class="selection-type">
+								<input class="checkbox" type="checkbox" name="type-hotel" value="hotel" id="hotel" checked>
 								<label for="hotel">Гостиница</label>
 							</p>
-							<p>
-								<input type="checkbox" name="type-hotel" value="motel" id="motel" checked>
+							<p class="selection-type">
+								<input class="checkbox" type="checkbox" name="type-hotel" value="motel" id="motel" checked>
 								<label for="motel">Мотель</label>
 							</p>
-							<p>
-								<input type="checkbox" name="type-hotel" value="apartments" id="apartments" checked>
+							<p class="selection-type">
+								<input class="checkbox" type="checkbox" name="type-hotel" value="apartments" id="apartments" checked>
 								<label for="apartments">Апартаменты</label>
 							</p>
 						</fieldset>
-						<fieldset>
-							<legend>Стоимость в сутки (Р):</legend>
-							<p>
+						<fieldset class="selection-cost">
+							<legend class="selection-title">Стоимость в сутки (Р):</legend>
+							<p class="cost-gap">
 								<input type="text" name="cost" id="cost-result-1" value="0">
 								<input type="text" name="cost" id="cost-result-2" value="3000">
 							</p>
-							0<input type="range" name="cost" id="cost" min="0" max="5000">5000
+							0<input class="cost-range" type="range" name="cost" id="cost" min="0" max="5000">5000
 						</fieldset>
-						<button type="submit">Показать</button>
+						<button class="btn btn-show" type="submit">Показать</button>
 					</fieldset>
 				</form>
-				<label class="find" for="results">Найдено:</label>
-				<output class="find" name="results" id="results">3</output>
-				<h3 class="sorting">Сортировка:</h3>
-				<ul class="sorting-type">
-					<li class="sorting-type-item"><a href="#">По цене</a></li>
-					<li class="sorting-type-item"><a href="#">По типу</a></li>
-					<li class="sorting-type-item"><a href="#">По рейтингу</a></li>
-				</ul>
-				<a href="#"><svg class="dir up-dir" alt="вверх" xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path  d="M5.5 0L0 10h11z"/></svg></a>
-				<a href="#"><svg class="dir down-dir" alt="вниз" xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path  d="M5.5 10L0 0h11"/></svg></a>
+				<section class="find-sort">
+					<label class="find" for="results">Найдено:</label>
+					<output class="find" name="results" id="results">3</output>
+					<h3 class="sorting">Сортировка:</h3>
+					<ul class="sorting-type">
+						<li class="sorting-type-item"><a href="#">По цене</a></li>
+						<li class="sorting-type-item"><a href="#">По типу</a></li>
+						<li class="sorting-type-item"><a href="#">По рейтингу</a></li>
+					</ul>
+					<a href="#"><svg class="dir up-dir" alt="вверх" xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path  d="M5.5 0L0 10h11z"/></svg></a>
+					<a href="#"><svg class="dir down-dir" alt="вниз" xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path  d="M5.5 10L0 0h11"/></svg></a>
+				</section>
 			</section>
 			<section class="results">
 				<ul class="results-list">
