@@ -37,18 +37,17 @@ a {
 
 .site-navigation {
 	list-style: none;
+
 	font-size: 14px;
 	line-height: 26px;
 	color: #000000;
-	margin: 0;
-
+	
 	display: flex;
 	padding: 0;
-
+	margin: 0;
 	flex-grow: 1;
 	justify-content: space-around;
 	align-items: center;
-
 }
 
 .site-page {
@@ -99,13 +98,6 @@ a {
 .welcome-title, 
 .welcome-text {
 	margin: 0px;
-}
-
-
-
-.welcome-img{
-	position: absolute;
-	
 }
 
 .visually-hidden{
@@ -392,6 +384,12 @@ a {
 .btn-show:hover,
 .btn-show:active{
 	background-color: transparent;
+}
+
+.selection-field {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
 }
 
 .sorting{
