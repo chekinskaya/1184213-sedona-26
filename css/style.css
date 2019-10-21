@@ -71,7 +71,7 @@ a {
 }
 
 .welcome {
-	width: 1200px;
+	width: 100%;
 	height: 565px;
 	background-image:
 	url("../img/polygon.svg"),
@@ -80,7 +80,6 @@ a {
 	
 	background-position: center bottom,
 	center;
-	position: relative;
 	background-color: #f2f2f2;
 
 	display: flex;
@@ -88,33 +87,26 @@ a {
 	align-items: center;
 }
 
-.welcome-info{
-	height: 216px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.welcome-title, 
-.welcome-text {
-	margin: 0px;
-}
-
-.visually-hidden{
-	display: none;
-}
-
 .welcome-title{
 	text-align: center;
 	font-size: 21px;
 	line-height: 26px;
-}
 
-.welcome-text{
+	margin: 0;
+	padding-top: 61px;
+	margin-bottom: 38px; 
+} 
+.welcome-text {
+	margin-bottom: 56px;
+
 	text-align: center;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: 300;
+}
+
+.visually-hidden{
+	display: none;
 }
 
 .reasons h3{
@@ -135,21 +127,23 @@ a {
 
 .reason-first-block {
 	align-self: center;
-	margin-top: 46px;
-	margin-left: 60px;
-	margin-right: 60px;
-	margin-bottom: 64px;
+	margin:auto;
 
 	display: flex;
 	flex-direction: column;
-	width: 280px;
-	height: 146px;
-	justify-content: space-between;
+	flex-grow: 1;
+	
+	justify-content: space-around;
 }
 
 .reason-first-text {
 	font-weight: 300;
 	margin: 0;
+	margin-bottom: 15px;
+}
+
+.reason-first-title{
+	padding-bottom: 15px;
 }
 
 .reason-first-img{
@@ -171,27 +165,31 @@ a {
 
 .reason-second-block {
 	align-self: center;
-	margin-top: 49px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 65px;
-
+	margin: auto;
+	
 	font-weight: 300;
 
 	display: flex;
 	flex-direction: column;
-	height: 142px;
+	flex-grow: 1;
+	
 	
 	justify-content: space-between;
 }
 
 .reason-second-text {
+	font-weight: 300;
 	margin: 0;
+	margin-bottom: 15px;
 	
 }
 
+.reason-second-title{
+	padding-bottom: 15px;
+}
+
 .reasons-list {
-	width: 1200px;
+	width: 100%;
 	height: 330px;
 	margin: 0px;
 	padding: 0px;
@@ -201,6 +199,7 @@ a {
 	display: flex;
 	background-color: #ffffff;
 	justify-content: space-around;
+	flex-wrap: wrap;
 }
 
 .reason-item {
@@ -263,20 +262,23 @@ a {
 	padding: 0;
 	margin: 0;
 
-	height: 256px;
-	width: 1200px;
+	
+	width: 100%;
 
 	display: flex;
 	justify-content: space-around;
 	position: relative;
 	list-style: none;
 	background-color: #eeeeee;
+	flex-wrap: wrap;
 }
 
 .reason-list2-item{
-	height: 142px;
-	width: 400px;
+	
 	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 14px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -286,6 +288,8 @@ a {
 	font-weight: 300;
 	font-size: 14px;
 	line-height: 21px;
+	padding-top: 14px;
+	margin: 0;
 }
 
 .search{
@@ -294,6 +298,47 @@ a {
 
 .search-text{
 	font-weight: 300;
+}
+
+.search-field {
+	text-transform: uppercase;
+	background-color: #ffffff;
+	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	flex-wrap: wrap;
+	padding: 55px;
+	z-index: 1;
+	
+}
+
+.input {
+	border: 0px solid #cccccc;
+	background-color: #f2f2f2; 
+	height: 38px;
+	
+	
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	padding-right: 50px;
+	color: #000000;
+	text-transform: uppercase;
+	font-weight: 700;
+
+}
+
+.date::after {
+	content: " ";
+	background-image: url("../img/calendar.svg");
+	background-repeat: no-repeat;
+	position: absolute;
+	width: 21px;
+	height: 22px;
+
+	
 }
 
 .selection{
@@ -351,8 +396,9 @@ a {
 }
 
 .btn-search{
-	width: 568px;
-	height: 86px;
+	
+
+	padding: 35px 140px;
 
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 21px;
@@ -361,10 +407,12 @@ a {
 	font-weight: 700;
   
 	background-color: #766357;
+	position: relative;
 }
 
 .btn-info{
 	background-color: #81b3d2;
+	text-transform: uppercase;
 }
 
 .btn-reservation{
@@ -384,6 +432,13 @@ a {
 .btn-show:hover,
 .btn-show:active{
 	background-color: transparent;
+}
+
+.btn-choice {
+	background-color: #f2f2f2;
+	color: #000000;
+	width: 38px;
+	height: 38px;
 }
 
 .selection-field {
@@ -423,6 +478,7 @@ a {
 	color: #000000;
 	font-size: 21px;
 	line-height: 26px;
+	font-weight: 700;
 }
 
 .dir{
@@ -510,6 +566,14 @@ a {
   height: 120px;
 }
 
+
+.footer-index {
+	margin-top: -120px;
+	z-index: 1;
+	position: relative;
+
+}
+
 .info-hashtag{
 	text-align: center;
 	font-size: 21px;
@@ -594,7 +658,7 @@ a {
 	opacity: 0.3;
 }
 
-.htmlacademy{
+.htmlacademy a{
 	color: #000000;
 }
 
