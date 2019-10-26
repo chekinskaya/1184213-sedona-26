@@ -656,6 +656,21 @@ a {
 
 }
 
+/* для первого отеля в каталоге*/
+.result-title {
+	color: #000000;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.result-title:hover {
+	color: #81b3d2;
+}
+
+.result-title:active {
+	color: rgba(0, 0, 0, 0.3); 
+}
 
 
 .block {
@@ -674,28 +689,24 @@ a {
 	display: flex;
 	width: 100%;
 	justify-content: flex-start;
-	margin-left: 6px;
+	
 	vertical-align: middle;
 
 }
 .result-info .rate {
-	padding: auto;
+	text-align: center;
 	margin-left: auto;
 }
 
 .result-info a {
 	display: block;
-	margin-left: 6px;
+	margin-right: 6px;
+	padding: 4px 16px; 
 }
 
 .result-name {
 	display: flex;
 	justify-content: space-between;
-}
-
-.result-name::after {
-	content: " ";
-	background-image: url("../img/star.svg");
 }
 
 .result-title{
