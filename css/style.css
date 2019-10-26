@@ -588,8 +588,8 @@ a {
 
 
 .indent {
-	margin-left: 72px;
-	margin-right: 72px;
+	padding-left: 72px;
+	padding-right: 72px;
 }
 
 .find-sort {
@@ -598,6 +598,8 @@ a {
 	flex-wrap: wrap;
 	vertical-align: middle;
 	margin-top: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #f2f2f2;
 }
 
 .find-type {
@@ -639,6 +641,8 @@ a {
 	display: flex;
 	padding-top: 30px;
 	padding-bottom: 30px;
+	
+	border-bottom: 1px solid #f2f2f2;
 	
 }
 
