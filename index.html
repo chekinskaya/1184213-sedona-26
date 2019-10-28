@@ -114,18 +114,20 @@
               <label for="date-of-departure">Дата выезда:</label>
               <input class="date input" type="text" name="date-of-departure" value="" id="date-of-departure" placeholder="4 июля 2017">
             </p>
-            <p class="block-adult">
-              <label for="adult">Взрослые:</label>
-              <button class="btn btn-choice" type="button">-</button>
-              <input class="input adult" type="text" name="adult" id="adult" value="2">
-              <button class="btn btn-choice" type="button">+</button>
-            </p>
-            <p class="block-children">
-              <label for="children">Дети:</label>
-              <button class="btn btn-choice" type="button">-</button>
-              <input class="input children" type="text" name="children" id="children" value="0">
-              <button class="btn btn-choice" type="button">+</button>
-            </p>
+            
+              <p class="block-adult">
+                <label class="adult-title" for="adult">Взрослые:</label>
+                <button class="btn btn-less" type="button">-</button>
+                <input class="input adult" type="text" name="adult" id="adult" value="2">
+                <button class="btn btn-more" type="button">+</button>
+              </p>
+              <p class="block-children">
+                <label class="children-title" for="children">Дети:</label>
+                <button class="btn btn-less" type="button">-</button>
+                <input class="input children" type="text" name="children" id="children" value="0">
+                <button class="btn btn-more" type="button">+</button>
+              </p>
+            
             <button class="btn btn-form" type="submit">Найти</button>
           </form>
           

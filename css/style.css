@@ -310,10 +310,10 @@ a {
 
 	display: flex;
 	position: absolute;
-	flex-direction: column;
 	flex-wrap: wrap;
 	padding: 55px;
 	z-index: 1;
+	justify-content: space-between;
 
 	box-sizing: border-box;
 	width: 100%;
@@ -338,6 +338,7 @@ a {
 .adult {
 	height: 38px;
 	width: 38px;
+	width: 49%;
 }
 
 .block-arrival,
@@ -345,10 +346,11 @@ a {
 .block-adult,
 .block-children {
 	display: flex;
+	width: 100%;
 	align-items: center;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	text-align: center;
+	
 	margin: 0;
 	margin-bottom: 30px;
 }
@@ -357,6 +359,9 @@ a {
 .block-departure input {
 	width: 346px;
 	padding: 0 12px;
+	text-align: left;
+
+
 
 	box-sizing: border-box;
 }
@@ -365,11 +370,35 @@ a {
 .block-children {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: stretch;
-	flex-grow: 1;
-
+	justify-content: space-between;
+	text-align: center;
+	width: 50%;
 }
 
+.block-adult{
+	justify-content: flex-start;
+}
+
+.block-children {
+	justify-content: flex-end;
+}
+
+.block-adult input,
+.block-children input {
+	width: 38px;
+}
+
+.adult-title,
+.children-title {
+	margin-right: auto;
+	justify-content: flex-start;
+}
+
+.children-title {
+	margin-left: auto;
+}
+
+.children 
 .input::placeholder {
 	color: #000000;
 }
@@ -386,11 +415,11 @@ a {
 }
 
 .date {
-	background-image: url("../img/calendar.svg");
+	background-image: url("../img/calendar_gray.svg");
 	background-repeat: no-repeat;
 	
 	background-size: 21px 22px;
-	background-position: right;
+	background-position: 316px;
 }
 
 .selection{
@@ -431,6 +460,112 @@ a {
 
 .find-sort{
 	background-color: #ffffff;
+}
+
+.results-list{
+	list-style: none;
+	background-color: #f2f2f2;
+	padding: 0;
+	margin: 0;
+	
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.result-item{
+	background-color: #ffffff;
+
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	
+	border-bottom: 1px solid #f2f2f2;
+}
+
+.result-img {
+	margin-right: 30px;
+}
+
+.result-item p {
+	margin: 0;
+
+}
+
+.result-title a{
+	color: #000000;
+
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.block p {
+	margin: 0;
+	padding: 0;
+}
+
+.result-info {
+	display: flex;
+	width: 100%;
+	justify-content: flex-start;
+	
+	vertical-align: middle;
+
+}
+.result-info .rate {
+	text-align: center;
+	margin-left: auto;
+}
+
+.result-info a {
+	display: block;
+	margin-right: 6px;
+	padding: 4px 16px; 
+}
+
+.result-name {
+	display: flex;
+	justify-content: space-between;
+}
+
+.result-title{
+	margin: 0;
+}
+
+.result-title:hover a{
+	color: #81b3d2;
+}
+
+.result-title:active a{
+	color: rgba(0, 0, 0, 0.3); 
+}
+
+.result-text{
+	font-weight: 300;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.result-rate {
+	display: flex;
+	justify-content: flex-end;
+	vertical-align: bottom;
+	margin-top: auto;
+	margin-left: auto;
+}
+
+.rate{
+	background-color: #f2f2f2;
+	font-weight: 300;
+	color: #666666;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .btn {
@@ -486,6 +621,7 @@ a {
 	background-color: #81b3d2;
 	text-transform: uppercase;
 	padding: 19px;
+	width: 100%;
 }
 
 .btn-form:hover{
@@ -517,14 +653,28 @@ a {
 	background-color: transparent;
 }
 
-.btn-choice {
+.btn-less,
+.btn-more {
 	background-color: #f2f2f2;
-	color: #000000;
+	color: gray;
 	width: 38px;
 	height: 38px;
 	padding: 0;
+
+	font-size: 21px;
 }
 
+.btn-less:hover,
+.btn-more:hover  {
+	background-color: #ebebeb;
+	color: #000000;
+}
+
+.btn-less:active,
+.btn-more:active {
+	background-color: #f2f2f2;
+	color: #81b3d2;
+}
 
 .sorting{
 	font-weight: 300;
@@ -586,7 +736,6 @@ a {
 	border-bottom: 0px dashed rgba(0, 0, 0, 0);
 }
 
-
 .indent {
 	padding-left: 72px;
 	padding-right: 72px;
@@ -624,118 +773,6 @@ a {
 	display: flex;
 }
 
-.results-list{
-	list-style: none;
-	background-color: #f2f2f2;
-	padding: 0;
-	margin: 0;
-	
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-}
-
-.result-item{
-	background-color: #ffffff;
-
-	display: flex;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	
-	border-bottom: 1px solid #f2f2f2;
-	
-}
-
-.result-img {
-	margin-right: 30px;
-}
-
-.result-item p {
-	margin: 0;
-
-}
-
-.result-title a{
-	color: #000000;
-
-}
-
-/* для первого отеля в каталоге*/
-.result-title {
-	color: #000000;
-	font-weight: bold;
-	font-size: 21px;
-	line-height: 26px;
-}
-
-.result-title:hover {
-	color: #81b3d2;
-}
-
-.result-title:active {
-	color: rgba(0, 0, 0, 0.3); 
-}
-
-
-.block {
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 100%;
-}
-
-.block p {
-	margin: 0;
-	padding: 0;
-}
-
-.result-info {
-	display: flex;
-	width: 100%;
-	justify-content: flex-start;
-	
-	vertical-align: middle;
-
-}
-.result-info .rate {
-	text-align: center;
-	margin-left: auto;
-}
-
-.result-info a {
-	display: block;
-	margin-right: 6px;
-	padding: 4px 16px; 
-}
-
-.result-name {
-	display: flex;
-	justify-content: space-between;
-}
-
-.result-title{
-	margin: 0;
-}
-
-.result-title:hover a{
-	color: #81b3d2;
-}
-
-.result-title:active a{
-	color: rgba(0, 0, 0, 0.3); 
-}
-
-.result-text{
-	font-weight: 300;
-}
-
-.rate{
-	background-color: #f2f2f2;
-	font-weight: 300;
-	color: #666666;
-	font-size: 14px;
-	line-height: 21px;
-}
 
 .info-footer{
 	background-color: rgba(255, 255, 255, 0.9);
