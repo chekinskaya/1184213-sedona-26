@@ -77,11 +77,21 @@
 						</fieldset>
 						<fieldset class="selection-cost">
 							<legend class="selection-title">Стоимость в сутки (Р):</legend>
-							<p class="cost-gap">
-								<input type="text" name="cost" id="cost-result-1" value="0">
-								<input type="text" name="cost" id="cost-result-2" value="3000">
-							</p>
-							0<input class="cost-range" type="range" name="cost" id="cost" min="0" max="5000">5000 <br>
+							<div class="price-controls">
+								<label class="min-price">от
+									<input type="text" name="min-price"value="0">
+								</label>
+								<label class="max-price">до
+									<input type="text" name="max-price" value="3000">
+								</label>
+							</div>
+							<div class="range-controls">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<div class="range-toggle range-toggle-min"></div>
+								<div class="range-toggle range-toggle-max"></div>
+							</div>
 							<button class="btn btn-show" type="submit">Показать</button>
 						</fieldset>
 						
