@@ -648,11 +648,12 @@ input[type="radio"].visually-hidden {
 
 .result-name {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 }
 
 .result-title{
 	margin: 0;
+	margin-right: auto;
 }
 
 .result-title:hover a{
@@ -1026,4 +1027,10 @@ input[type="radio"].visually-hidden {
 
 .htmlacademy-img:active{
 	fill: #bdbbbc;
+}
+
+.checked {
+	background-image: url("../img/star.svg");
+	width: 18px;
+	height: 17px;
 }
