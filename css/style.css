@@ -46,8 +46,16 @@ a {
 	padding: 0;
 	margin: 0;
 	flex-grow: 1;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
+}
+
+.site-navigation-left .site-page {
+	margin-right: auto;
+}
+
+.site-navigation-right .site-page {
+	margin-left: auto;
 }
 
 .site-page {
@@ -423,7 +431,7 @@ input[type="radio"].visually-hidden {
 }
 
 .adult-title{
-	margin-right: 41px;
+	margin-right: 39px;
 
 }
 
@@ -470,7 +478,7 @@ input[type="radio"].visually-hidden {
 }
 
 
-.selection{
+.selection {
 	background-image: url("../img/filter-background-min.jpg");
 	background-color: #766357;
 	background-position: center;
@@ -485,13 +493,13 @@ input[type="radio"].visually-hidden {
 
 }
 
-.selection legend{
+.selection legend {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 21px;
 }
 
-.selection fieldset{
+.selection fieldset {
 	border: 0 none;
 	padding: 0;
 	margin: 0;
@@ -575,8 +583,6 @@ input[type="radio"].visually-hidden {
 	background-image: url("../img/checkbox-on-disabled.svg");
 
 }
-
-
 
 .find-sort{
 	background-color: #ffffff;
@@ -1046,8 +1052,7 @@ input[type="radio"].visually-hidden {
 
 .selection-cost {
   width: 330px;
-  
-
+ 
   color: #ffffff;
   text-transform: uppercase;
 }
