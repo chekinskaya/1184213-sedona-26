@@ -656,7 +656,7 @@ input[type="radio"].visually-hidden {
 
 .result-name {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 }
 
 .result-title {
