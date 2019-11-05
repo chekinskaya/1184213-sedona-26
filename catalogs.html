@@ -27,7 +27,8 @@
 				<form class="indent" action="https://echo.htmlacademy.ru" method="post" oninput="results.value=search.value">
 					<section class="selection-field">
 						<h1 class="visually-hidden">Поиск отелей</h1>
-						<fieldset class="selection-infrastructure">
+						<div class="checkbox-area">
+							<fieldset class="selection-infrastructure">
 							<legend class="selection-title">Инфраструктура:</legend>
 							<p class="selection-type">
 								<label class="name-checkbox" for="pool">
@@ -52,6 +53,7 @@
 						</fieldset>
 						
 						<fieldset class="selection-hostel">
+							
 							<legend class="selection-title">Тип жилья:</legend>
 							<p class="selection-type">
 								<label class="name-checkbox" for="hotel">
@@ -74,8 +76,9 @@
 									Апартаменты
 								</label>
 							</p>
+
 						</fieldset>
-						
+						</div>
 						<fieldset class="selection-cost">
 							<legend class="selection-title">Стоимость в сутки (Р):</legend>
 							<div class="price-controls">
