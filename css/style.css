@@ -1182,6 +1182,7 @@ input[type="radio"].visually-hidden {
 
 .checkbox-area {
 	display: flex;
+	margin-right: 348px;
 }
 
 .selection-title-cost {
@@ -1192,6 +1193,9 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 22px;
 }
 
-.selection-infrastructure fieldset {
+.selection-infrastructure {
+	margin-left: 0;
 	margin-right: 118px;
+
+	align-self: flex-start;
 }
