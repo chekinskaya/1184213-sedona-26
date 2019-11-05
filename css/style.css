@@ -88,10 +88,10 @@ a {
 	height: 565px;
 
 	background-image:
-	url("../img/polygon.svg"),
+	/*url("../img/polygon.svg"),*/
 	url("../img/bg.jpg");
 	background-repeat: no-repeat;
-	background-position: center bottom,
+	background-position: /*bottom,*/
 	top;
 	background-color: #f2f2f2;
 
@@ -100,16 +100,26 @@ a {
 	align-items: center;
 	
 	margin-top: -56px;
+	position: relative;
+}
+
+.welcome::before {
+	content: "";
+
+	position: absolute;
+	background-image: url("../img/polygon.svg");
+	bottom: 0px;
 }
 
 .welcome-title {
     text-align: center;
     font-size: 23px;
     line-height: 26px;
-    margin: 0;
+    margin: 0 auto;
     padding-top: 59px;
     margin-bottom: 28px;
     letter-spacing: -1px;
+    max-width: 442px;
 } 
 
 .welcome-text {
@@ -146,8 +156,10 @@ input[type="radio"].visually-hidden {
 
 .reasons h3 {
 	font-size: 21px;
-	line-height: 21px;
-	margin: 0px;
+    line-height: 21px;
+    margin: 0 auto;
+    max-width: 155px;
+    align-self: center;
 }
 
 .reason-first {
@@ -158,27 +170,31 @@ input[type="radio"].visually-hidden {
 
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 .reason-first-block {
-	align-self: center;
-	margin:auto;
-
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	align-self: center;
+	margin: 0 60px;
+
 	
 	justify-content: space-between;
 }
 
 .reason-first-text {
 	font-weight: 300;
-	margin: 0;
-	margin-bottom: 15px;
+    line-height: 24px;
+    margin: 0 auto;
+    max-width: 282px;
+    margin-bottom: 10px;
 }
 
 .reason-first-title {
-	padding-bottom: 15px;
+	padding-bottom: 28px;
+	align-self: center;
 }
 
 .reason-second {
@@ -209,10 +225,15 @@ input[type="radio"].visually-hidden {
 	font-weight: 300;
 	margin: 0;
 	margin-bottom: 15px;
+	max-width: 305px;
+	align-self: center;
 }
 
 .reason-second-title {
 	padding-bottom: 15px;
+	font-weight: 700;
+	align-self: center;
+	max-width: 115px;
 }
 
 .reasons-list {
@@ -224,7 +245,7 @@ input[type="radio"].visually-hidden {
 	text-align: center;
 	display: flex;
 	background-color: #ffffff;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 	padding: 60px 0;
 	margin-bottom: 9px;
@@ -233,12 +254,13 @@ input[type="radio"].visually-hidden {
 .reason-item {
 	font-weight: 300;
 	font-size: 14px;
+
 	line-height: 21px;
 	padding-top: 100px;
 	position: relative;
 
 	align-self: center;
-	min-width: 400px;
+	width: 290px;
 	box-sizing: border-box;
 }
 
@@ -301,16 +323,15 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-list2-item {
-	margin: auto;
-	margin-top: 48px;
-	margin-bottom: 58px;
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	box-sizing: border-box;
 
-	min-width: 400px;
+	max-width: 264px;
+	margin: auto;
+	margin-top: 48px;
+	margin-bottom: 58px;
 }
 
 .reason-list2-text {
@@ -319,6 +340,7 @@ input[type="radio"].visually-hidden {
 	line-height: 21px;
 	padding-top: 22px;
 	margin: 0;
+	max-width: 265px;
 }
 
 .search {
@@ -1160,8 +1182,6 @@ input[type="radio"].visually-hidden {
 
 .checkbox-area {
 	display: flex;
-	justify-content: space-between;
-	width: 37%;
 }
 
 .selection-title-cost {
@@ -1170,4 +1190,8 @@ input[type="radio"].visually-hidden {
 
 .selection-title {
 	margin-bottom: 22px;
+}
+
+.selection-infrastructure fieldset {
+	margin-right: 118px;
 }
