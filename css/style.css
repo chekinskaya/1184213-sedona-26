@@ -399,6 +399,7 @@ input[type="radio"].visually-hidden {
 	font-size: 14px;
 	line-height: 24px;
 	padding: 0;
+
 	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
@@ -430,8 +431,10 @@ input[type="radio"].visually-hidden {
 .block-departure input {
 	min-width: 346px;
 	
-	padding: 0 12px;
+	padding: 0;
 	text-align: left;
+	padding-right: 32px;
+	padding-left: 15px;
 
 	box-sizing: border-box;
 }
@@ -478,32 +481,39 @@ input[type="radio"].visually-hidden {
 .input:hover {
 	color: #000000;
 	background-color: #ebebeb;
-
-	background-image: url("../img/calendar-1.svg");
-	background-repeat: no-repeat;
-	
-	background-size: 21px 22px;
-	background-position: 316px;
 }
 
 .input:focus {
 	color: #000000;
 	background-color: #ffffff;
 	border: solid 2px #e5e5e5;
+}
 
-	background-image: url("../img/calendar-2.svg");
-	background-repeat: no-repeat;
-	
-	background-size: 21px 22px;
-	background-position: 316px;
+/*календари*/
+.block-departure {
+	position: relative;
 }
 
 .date {
+	width: 21px;
+	height: 22px;
+	position: absolute;
 	background-image: url("../img/calendar.svg");
 	background-repeat: no-repeat;
 	
-	background-size: 21px 22px;
-	background-position: 316px;
+	right: 9px;
+	top: 9px;
+}
+
+.date:focus {
+	background-image: url("../img/calendar-2.svg");
+	background-repeat: no-repeat;
+}
+
+.date:hover {
+	content: "";
+	background-image: url("../img/calendar-1.svg");
+	background-repeat: no-repeat;	
 }
 
 .selection {
