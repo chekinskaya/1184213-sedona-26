@@ -1224,3 +1224,11 @@ input[type="radio"].visually-hidden {
 
 	align-self: flex-start;
 }
+
+.block-data-2 {
+	margin-left: 22px;
+}
+
+.block-data-1 {
+	margin-left: 25px;
+}
