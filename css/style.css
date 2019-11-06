@@ -37,7 +37,6 @@ a {
 
 	position: relative;
 	z-index: 2;
-
 }
 
 .site-navigation {
@@ -185,8 +184,6 @@ input[type="radio"].visually-hidden {
 	flex-grow: 1;
 	align-self: center;
 	margin: 0 60px;
-
-	
 	justify-content: space-between;
 }
 
@@ -223,7 +220,6 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
-		
 	justify-content: space-between;
 }
 
@@ -244,7 +240,6 @@ input[type="radio"].visually-hidden {
 
 .reasons-list {
 	width: 100%;
-	
 	margin: 0px;
 		
 	list-style: none;
@@ -275,8 +270,6 @@ input[type="radio"].visually-hidden {
 	line-height: 21px; 
 	margin-bottom: 25px;
 }
-
-
 
 .reason-hostel::before {
 	content: " ";
@@ -490,8 +483,8 @@ input[type="radio"].visually-hidden {
 	border: solid 2px #e5e5e5;
 }
 
-/*календари*/
-.block-departure {
+.block-departure,
+.block-arrival {
 	position: relative;
 }
 
@@ -863,17 +856,18 @@ input[type="radio"].visually-hidden {
 	color: #81b3d2;
 }
 
-.btn-data {
-	background-color: #f2f2f2;
-	z-index: 2;
+.btn-date {
+	background-color: transparent;
 	position: absolute;
 }
 
-.btn-data:hover {
+.btn-date:hover {
+	background-color: transparent;
 
 }
 
-.btn-data:active {
+.btn-date:active {
+	background-color: transparent;
 
 }
 
